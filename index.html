@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCJ Quiz App</title>
+    <link rel="icon" href="quiz-favicon.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-yellow-50 min-h-screen p-5">
+    <header class="flex items-center p-4 w-full">
+        <img src="Logo.jpg" alt="Logo" class="w-20 h-20 mr-6">
+        <h1 class="text-3xl font-bold text-amber-900">TCJ's Tuesday Trivial Quiz</h1>
+    </header>
+    <main class="flex items-center justify-center">
+        <div class="bg-amber-900 shadow-1g rounded-2xl p-5 max-w-xl w-full">
+            <h2 id="question" class="text-2x1 text-white font-semibold mb-4">Loading ...</h2>
+            <div id="options" class="space-y-2"></div>
+            <button id="nextBtn" onclick="nextQuestion()" class="mt-5 px-4 py-2 bg-amber-400 text-white text-sm rounded hover:bg-amber-300">
+                Next
+            </button>
+            <div id="score-container" class="text-center mt-6 hidden">
+                <h2 class="text-x1 font-bold text-white">Your Score: <span id="score"></span> / <span id="total"></span></h2>
+            </div>
+        </div>  
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
